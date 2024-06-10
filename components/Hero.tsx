@@ -30,7 +30,7 @@ export function Hero() {
                 </div>
 
                 <p className="z-10 text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
-                    Hi, I'm
+                    Hi, I&#39;m
                     <LinkPreview url="https://muhammad-umar.vercel.app/images/me.png" isStatic={true} imageSrc="https://muhammad-umar.vercel.app/images/me.png" className="font-bold uppercase  z-30">
                         <span className="uppercase font-base px-2 bg-gradient-to-r from-indigo-500 to-violet-500 text-transparent bg-clip-text">Umar</span>
                     </LinkPreview>
