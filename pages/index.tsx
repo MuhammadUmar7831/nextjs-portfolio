@@ -1,8 +1,8 @@
 import Image from "next/image";
 import { Inter } from "next/font/google";
 import { Hero } from "@/components/Hero";
-import About from "@/components/About";
 import { TracingBeam } from "@/components/ui/tracing-beam";
+import TechStack from "@/components/TechStack/TechStack";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -12,7 +12,7 @@ export default function Home() {
       <div className="max-w-7xl w-full">
         <TracingBeam className="px-6">
           <Hero />
-          <About />
+          <TechStack />
         </TracingBeam >
       </div>
     </main>
