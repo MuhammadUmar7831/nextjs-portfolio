@@ -1,0 +1,29 @@
+.light {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 50%;
+    transform: translateY(-70%);
+    filter: blur(100px);
+    background: linear-gradient(90deg, #335bfa 0%, #2ae9c9 100%);
+    z-index: 0;
+    border-radius: 50%;
+    /* Add transition property for smooth animation */
+    transition: background 10s ease-in-out;
+    /* Adjust duration and timing function as needed */
+    animation: gradientChange 10s infinite;
+}
+
+@keyframes gradientChange {
+    0% {
+        background: linear-gradient(90deg, #335bfa 0%, #2ae9c9 100%);
+    }
+
+    50% {
+        background: linear-gradient(90deg, #ff8c00 0%, #ff69b4 100%);
+    }
+
+    100% {
+        background: linear-gradient(90deg, #335bfa 0%, #2ae9c9 100%);
+    }
+}
