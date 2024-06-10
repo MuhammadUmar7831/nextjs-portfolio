@@ -1,12 +1,12 @@
 import { FaLocationArrow } from "react-icons/fa";
 import MagicButton from "./ui/MagicButton";
-import { Spotlight } from "./ui/SpotLight";
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
 import ThreeDBubble from "./ui/ThreeDBubble";
 import { SparklesCore } from "./ui/sparkels";
 import { LinkPreview } from "./ui/link-preview";
 import styles from './ui/GridBg.module.css';
 import { motion } from "framer-motion";
+import { Spotlight } from "./ui/Spotlight";
 
 export function Hero() {
 
