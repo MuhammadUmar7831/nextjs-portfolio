@@ -37,14 +37,13 @@ export function Hero() {
                     , aspiring Software Engineer.
                 </p>
 
-                <div className="w-full flex flex-col items-center justify-center overflow-hidden rounded-md">
-                    <h1 className="md:text-7xl text-3xl lg:text-9xl font-bold text-center text-white relative">
+                <div className="flex flex-col items-center justify-center overflow-hidden rounded-md">
+                    <h1 className="text-center text-[40px] md:text-5xl lg:text-6xl text-white relative">
                         <TextGenerateEffect
-                            className="text-center text-[40px] md:text-5xl lg:text-6xl"
                             words={"Code. Create. Innovate. Dominate."}
                         />
                     </h1>
-                    <div className="w-[40rem] h-20 relative overflow-x-hidden">
+                    <div className="w-full h-20 relative overflow-x-hidden">
                         {/* Gradients */}
                         <motion.div animate={{ x: ['-100%', '0%', '100%', '-100%'], y: 0 }} transition={{ duration: 6, repeat: Infinity, repeatType: 'loop' }} className="absolute inset-x-20 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-[2px] w-3/4 blur-sm" />
                         <motion.div animate={{ x: ['-100%', '0%', '100%', '-100%'], y: 0 }} transition={{ duration: 6, repeat: Infinity, repeatType: 'loop' }}  className="absolute inset-x-20 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-px w-3/4" />
