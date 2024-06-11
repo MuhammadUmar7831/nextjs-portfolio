@@ -1,11 +1,19 @@
 import React from 'react';
-import TechCard from './TechCard';
+import TechCard from './TechStack/TechCard';
 import { backendTechnologies, databases, frontendTechnologies, programmingLanguages, toolsLib } from '@/data/Technologies';
-import TechComponent from './TechComponent';
+import TechComponent from './TechStack/TechComponent';
 
 export default function TechStack() {
     return (
         <section className="w-full grid grid-cols-1 lg:grid-cols-3 gap-4">
+            <div className='col-span-1 lg:col-span-3 mb-5'>
+                <h1 className='text-5xl text-center font-bold tracking-wider py-2'>
+                    My <span className='bg-gradient-to-r from-indigo-500 to-violet-500 bg-clip-text text-transparent'>Tech</span> Stack
+                </h1>
+                <p className='text-center mt-2 text-xl tracking-wider'>which i contantly try to{" "}
+                    <span className='bg-gradient-to-r from-indigo-500 to-violet-500 bg-clip-text text-transparent'>imporve</span>
+                </p>
+            </div>
             {/* frontend */}
             <TechCard
                 title="Frontend Tech"

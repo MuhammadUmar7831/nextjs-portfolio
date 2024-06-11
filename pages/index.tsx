@@ -2,7 +2,7 @@ import Image from "next/image";
 import { Inter } from "next/font/google";
 import { Hero } from "@/components/Hero";
 import { TracingBeam } from "@/components/ui/tracing-beam";
-import TechStack from "@/components/TechStack/TechStack";
+import TechStack from "@/components/TechStack";
 
 const inter = Inter({ subsets: ["latin"] });
 
