@@ -57,7 +57,7 @@ export const projects = [
     },
     {
         id: 4,
-        imageSrc: "/images/projects/eCafe.png",
+        imageSrc: "/images/projects/cafe.png",
         title: "eCafé",
         description: "Online store to order eatables for a local café. Inetgrated with admin panel. There are different roles in app like Customer, Admin, Manager and Clerk with different Powers.",
         video: "https://www.youtube.com/watch?v=3waglUa5Ako",
