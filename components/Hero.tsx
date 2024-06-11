@@ -47,8 +47,8 @@ export function Hero() {
                         {/* Gradients */}
                         <motion.div animate={{ x: ['-100%', '0%', '100%', '-100%'], y: 0 }} transition={{ duration: 6, repeat: Infinity, repeatType: 'loop' }} className="absolute inset-x-20 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-[2px] w-3/4 blur-sm" />
                         <motion.div animate={{ x: ['-100%', '0%', '100%', '-100%'], y: 0 }} transition={{ duration: 6, repeat: Infinity, repeatType: 'loop' }}  className="absolute inset-x-20 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-px w-3/4" />
-                        <motion.div animate={{ x: ['-100%', '0%', '100%', '-100%'], y: 0 }} transition={{ duration: 6, repeat: Infinity, repeatType: 'loop' }}  className="absolute inset-x-60 top-0 bg-gradient-to-r from-transparent via-sky-500 to-transparent h-[5px] w-1/4 blur-sm" />
-                        <motion.div animate={{ x: ['-100%', '0%', '100%', '-100%'], y: 0 }} transition={{ duration: 6, repeat: Infinity, repeatType: 'loop' }}  className="absolute inset-x-60 top-0 bg-gradient-to-r from-transparent via-sky-500 to-transparent h-px w-1/4" />
+                        <div className="absolute inset-x-60 top-0 bg-gradient-to-r from-transparent via-sky-500 to-transparent h-[5px] w-1/4 blur-sm mx-auto" />
+                        <div className="absolute inset-x-60 top-0 bg-gradient-to-r from-transparent via-sky-500 to-transparent h-px w-1/4 mx-auto" />
                         {/* Core component */}
                         <SparklesCore
                             background="transparent"
