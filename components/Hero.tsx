@@ -11,7 +11,7 @@ import { Spotlight } from "./ui/Spotlight";
 export function Hero() {
 
     return (
-        <div className="pb-20 pt-36 flex flex-col items-center">
+        <section className="pb-20 pt-36 flex flex-col items-center">
             <div>
                 <Spotlight className="-top-40 -left-10 md:-left-32 md:-top-20 h-screen" fill="white" />
                 <Spotlight className="top-10 left-full h-[80vh] w-[50vw]" fill="purple" />
@@ -46,7 +46,7 @@ export function Hero() {
                     <div className="w-full h-20 relative overflow-x-hidden">
                         {/* Gradients */}
                         <motion.div animate={{ x: ['-100%', '0%', '100%', '-100%'], y: 0 }} transition={{ duration: 6, repeat: Infinity, repeatType: 'loop' }} className="absolute inset-x-20 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-[2px] w-3/4 blur-sm" />
-                        <motion.div animate={{ x: ['-100%', '0%', '100%', '-100%'], y: 0 }} transition={{ duration: 6, repeat: Infinity, repeatType: 'loop' }}  className="absolute inset-x-20 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-px w-3/4" />
+                        <motion.div animate={{ x: ['-100%', '0%', '100%', '-100%'], y: 0 }} transition={{ duration: 6, repeat: Infinity, repeatType: 'loop' }} className="absolute inset-x-20 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-px w-3/4" />
                         <div className="absolute inset-x-60 top-0 bg-gradient-to-r from-transparent via-sky-500 to-transparent h-[5px] w-1/4 blur-sm mx-auto" />
                         <div className="absolute inset-x-60 top-0 bg-gradient-to-r from-transparent via-sky-500 to-transparent h-px w-1/4 mx-auto" />
                         {/* Core component */}
@@ -64,11 +64,16 @@ export function Hero() {
                     </div>
                 </div>
 
-                <div className="relative w-full">
-                    <ThreeDBubble otherClass={"absolute -top-80 left-0 w-40 h-40"} />
-                    <ThreeDBubble otherClass={"absolute -top-80 left-0 w-10 h-10"} />
-                    <ThreeDBubble otherClass={"absolute -top-80 left-40 w-5 h-5"} />
-                </div>
+                <motion.div
+                    initial={{ translateY: 500 }}
+                    animate={{ translateY: 0 }}
+                    transition={{ delay: 0, duration: 5 }}
+                    className="relative w-full"
+                >
+                    <ThreeDBubble otherClass={"absolute -top-80 w-40 h-40"} />
+                    <ThreeDBubble otherClass={"absolute -top-80 w-10 h-10"} />
+                    <ThreeDBubble otherClass={"absolute -top-80 w-5 h-5"} />
+                </motion.div>
 
                 <MagicButton
                     icon={<FaLocationArrow />}
@@ -77,6 +82,6 @@ export function Hero() {
                 />
             </div>
 
-        </div>
+        </section>
     );
 }
