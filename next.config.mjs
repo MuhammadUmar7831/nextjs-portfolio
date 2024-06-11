@@ -3,7 +3,7 @@ const nextConfig = {
   reactStrictMode: true,
   images: {
     domains: [
-      "muhammad-umar.vercel.app", // Microlink Image Preview
+      "muhammad-umar.vercel.app",
     ],
   },
 };
