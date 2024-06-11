@@ -37,11 +37,11 @@ export default function ProjectCard({ name, descripton, image, github, screensho
                     className="object-contain w-full"
                 />
             </div>
-            <p className="text-base sm:text-xl mt-4 mb-2 text-neutral-200">
+            <p className="text-2xl mt-4 mb-2 text-neutral-200">
                 {name}
             </p>
 
-            <p className="text-sm text-neutral-400">
+            <p className="text-base text-neutral-400">
                 {descripton}
             </p>
             <div className="flex flex-row items-center justify-start my-10 w-full flex-wrap">

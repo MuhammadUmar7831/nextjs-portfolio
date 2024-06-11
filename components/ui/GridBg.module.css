@@ -3,7 +3,7 @@
     top: 0;
     width: 100%;
     height: 50%;
-    transform: translateY(-70%);
+    transform: translateY(-80%);
     filter: blur(100px);
     background: linear-gradient(90deg, #335bfa 0%, #2ae9c9 100%);
     z-index: 0;
