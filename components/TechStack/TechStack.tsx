@@ -1,38 +1,71 @@
-import React from 'react'
-import TechCard from './TechCard'
-import { backendTechnologies, frontendTechnologies, programmingLanguages } from '@/data/Technologies'
-import TechComponent from './TechComponent'
+import React from 'react';
+import TechCard from './TechCard';
+import { backendTechnologies, databases, frontendTechnologies, programmingLanguages, toolsLib } from '@/data/Technologies';
+import TechComponent from './TechComponent';
 
 export default function TechStack() {
     return (
-        <section className='grid grid-cols-3'>
+        <section className="w-full grid grid-cols-1 lg:grid-cols-3 gap-4">
             {/* frontend */}
-            <TechCard title='Frontend Tech'
-                description={`I've created beautiful using`}
-                otherClass='col-span-2 flex-col lg:flex-row justify-center items-center p-10'
+            <TechCard
+                title="Frontend Tech"
+                description={`I've created beautiful applications using`}
+                otherClass="col-span-1 lg:col-span-2"
+                contentClass="flex flex-col lg:flex-row justify-center items-center gap-2"
                 Component={
-                    <div className="lg:w-2/3">
+                    <div className="w-full lg:w-2/3">
                         <TechComponent technologies={frontendTechnologies} />
-                    </div>}
+                    </div>
+                }
             />
             {/* backend */}
-            <TechCard title='Backend Tech'
-                description={`I've build my own apis using`}
-                otherClass='col-span-1 flex-col lg:flex-row justify-center items-center p-10'
+            <TechCard
+                title="Backend Tech"
+                description={`I've built my own APIs using`}
+                otherClass="col-span-1"
+                contentClass="flex flex-col lg:flex-row justify-center items-center gap-2"
                 Component={
-                    <div className="lg:w-2/3">
+                    <div className="w-full lg:w-2/3">
                         <TechComponent technologies={backendTechnologies} />
-                    </div>}
+                    </div>
+                }
+            />
+            {/* Databases */}
+            <TechCard
+                title="Databases"
+                description={`I've also managed these'`}
+                otherClass="col-span-1"
+                contentClass="flex flex-col lg:flex-row justify-center items-center gap-2"
+                Component={
+                    <div className="w-full lg:w-2/3">
+                        <TechComponent technologies={databases} />
+                    </div>
+                }
             />
             {/* Programming Languages */}
-            <TechCard title='Languages'
-                description={`I've strong basis in theese`}
-                otherClass='col-span-1 flex-col lg:flex-row justify-center items-center p-10'
+            <TechCard
+                title="Programming Languages"
+                description={`I have a strong basis in these`}
+                otherClass="col-span-1 lg:col-span-2"
+                contentClass="flex flex-col lg:flex-row justify-center items-center gap-2"
                 Component={
-                    <div className="lg:w-2/3">
+                    <div className="w-full lg:w-2/3">
                         <TechComponent technologies={programmingLanguages} />
-                    </div>}
+                    </div>
+                }
+            />
+            {/* Tools/Lib */}
+            <TechCard
+                title="Tools/Lib"
+                description={`I am familiar to these`}
+                otherClass="col-span-1 lg:col-span-3"
+                contentClass="flex flex-col lg:flex-row justify-center items-center gap-2"
+                Component={
+                    <div className="w-full lg:w-2/3">
+                        <TechComponent technologies={toolsLib} />
+                    </div>
+                }
             />
         </section>
-    )
+    );
 }
