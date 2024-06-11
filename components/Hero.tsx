@@ -43,12 +43,12 @@ export function Hero() {
                             words={"Code. Create. Innovate. Dominate."}
                         />
                     </h1>
-                    <div className="w-full h-20 relative overflosw-x-hidden">
+                    <div className="w-full h-20 relative overflow-hidden">
                         {/* Gradients */}
-                        <motion.div animate={{ x: ['-100%', '0%', '100%', '-100%'], y: 0 }} transition={{ duration: 6, repeat: Infinity, repeatType: 'loop' }} className="absolute inset-x-20 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-[2px] w-3/4 blur-sm" />
-                        <motion.div animate={{ x: ['-100%', '0%', '100%', '-100%'], y: 0 }} transition={{ duration: 6, repeat: Infinity, repeatType: 'loop' }} className="absolute inset-x-20 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-px w-3/4" />
-                        <div className="bg-gradient-to-r from-transparent via-sky-500 to-transparent h-[5px] w-1/4 blur-sm mx-auto" />
-                        <div className="bg-gradient-to-r -mt-1 from-transparent via-sky-500 to-transparent h-px w-1/4 mx-auto" />
+                        <motion.div animate={{ x: ['-50%', '50%', '-50%'], y: 0 }} transition={{ duration: 4, repeat: Infinity, repeatType: 'loop' }} className="absolute inset-x-20 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-[2px] w-3/4 blur-sm" />
+                        <motion.div animate={{ x: ['-50%', '50%', '-50%'], y: 0 }} transition={{ duration: 4, repeat: Infinity, repeatType: 'loop' }} className="absolute inset-x-20 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-px w-3/4" />
+                        <div className="bg-gradient-to-r from-transparent via-sky-500 to-transparent h-[5px] w-1/2 blur-sm mx-auto" />
+                        <div className="bg-gradient-to-r -mt-1 from-transparent via-sky-500 to-transparent h-px w-1/2 mx-auto" />
                         {/* Core component */}
                         <SparklesCore
                             background="transparent"
@@ -58,9 +58,6 @@ export function Hero() {
                             className="w-full h-full"
                             particleColor="#FFFFFF"
                         />
-
-                        {/* Radial Gradient to prevent sharp edges */}
-                        <div className="absolute inset-0 w-full h-full bg-black-100 [mask-image:radial-gradient(350px_200px_at_top,transparent_20%,white)]"></div>
                     </div>
                 </div>
 

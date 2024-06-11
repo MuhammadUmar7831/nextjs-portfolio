@@ -21,7 +21,7 @@ export default function Projects() {
             </div>
             <div className='flex flex-wrap gap-4'>
                 {projects.map((project) => (
-                    <ProjectCard name={project.title} descripton={project.description} image={project.imageSrc} github={project.github} screenshots={project.screenshots} video={project.video} liveDemo={project.liveDemo} technologies={project.technologies} contributors={project.contributors} />
+                    <ProjectCard key={project.id} name={project.title} descripton={project.description} image={project.imageSrc} github={project.github} screenshots={project.screenshots} video={project.video} liveDemo={project.liveDemo} technologies={project.technologies} contributors={project.contributors} />
                 ))}
             </div>
         </section>
