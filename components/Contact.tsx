@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { RefObject } from "react";
 import { motion } from "framer-motion";
 import { LinkPreview } from "./ui/link-preview";
 import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
@@ -8,9 +8,9 @@ import { IoLogoWhatsapp, IoMdCall } from "react-icons/io";
 import Link from "./Projects/Link";
 import { contact } from "@/data/contact";
 
-export function Contact() {
+export function Contact({ contactRef }: { contactRef: RefObject<HTMLElement> }) {
     return (
-        <section className='mt-44'>
+        <section className='mt-44' ref={contactRef}>
             <motion.h1
                 initial={{ opacity: 0.5, y: 100 }}
                 whileInView={{ opacity: 1, y: 0 }}

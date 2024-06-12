@@ -1,12 +1,12 @@
-import React from 'react';
+import React, { RefObject } from 'react';
 import TechCard from './TechStack/TechCard';
 import { backendTechnologies, databases, frontendTechnologies, programmingLanguages, toolsLib } from '@/data/Technologies';
 import TechComponent from './TechStack/TechComponent';
 import { LinkPreview } from './ui/link-preview';
 
-export default function TechStack() {
+export default function TechStack({techStackRef}: {techStackRef: RefObject<HTMLElement>}) {
     return (
-        <section className="w-full grid grid-cols-1 lg:grid-cols-3 gap-4">
+        <section className="w-full grid grid-cols-1 lg:grid-cols-3 gap-4" ref={techStackRef}>
             <div className='col-span-1 lg:col-span-3 mb-5'>
                 <h1 className='text-5xl text-center font-bold tracking-wider py-2'>
                     My {" "}

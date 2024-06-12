@@ -7,11 +7,12 @@ import { LinkPreview } from "./ui/link-preview";
 import styles from './ui/GridBg.module.css';
 import { motion } from "framer-motion";
 import { Spotlight } from "./ui/Spotlight";
+import { RefObject } from "react";
 
-export function Hero() {
+export function Hero({ homeRef }: { homeRef: RefObject<HTMLElement> }) {
 
     return (
-        <section className="pb-20 pt-36 flex flex-col items-center">
+        <section className="pb-20 pt-36 flex flex-col items-center" ref={homeRef}>
             <div>
                 <Spotlight className="-top-40 -left-10 md:-left-32 md:-top-20 h-screen" fill="white" />
                 <Spotlight className="top-10 left-full h-[80vh] w-[50vw]" fill="purple" />

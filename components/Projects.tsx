@@ -1,11 +1,11 @@
-import React from 'react'
+import React, { RefObject } from 'react'
 import { LinkPreview } from './ui/link-preview'
 import ProjectCard from './Projects/ProjectCard'
 import { projects } from '@/data/projects'
 
-export default function Projects() {
+export default function Projects({projectsRef}: {projectsRef: RefObject<HTMLElement>}) {
     return (
-        <section className='w-full mt-44'>
+        <section className='w-full mt-44' ref={projectsRef}>
             <div className='w-full mb-10'>
                 <h1 className='text-5xl text-center font-bold tracking-wider py-2'>
                     Recent {" "}
