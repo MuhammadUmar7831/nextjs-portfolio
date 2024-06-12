@@ -38,7 +38,7 @@ export const projects = [
     },
     {
         id: 3,
-        imageSrc: "/images/projects/statistics.png",
+        imageSrc: "/images/projects/statistics.gif",
         title: "Statistics Application",
         description:
             "This web app is designed for wholesale traders. It helps manage orders, suppliers, and products easily. Plus, it provides detailed stats for all orders, making business decisions simpler.",
