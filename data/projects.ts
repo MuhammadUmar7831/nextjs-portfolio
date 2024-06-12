@@ -20,7 +20,7 @@ export const projects = [
     },
     {
         id: 2,
-        imageSrc: "/images/projects/tournamentSchedulingSystem.png",
+        imageSrc: "/images/projects/tournamentSchedulingSystem.gif",
         title: "کھیل",
         description:
             "Use this app to schedule your cricket tournament. It also provide points table feature.",
