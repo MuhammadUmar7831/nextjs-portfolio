@@ -26,7 +26,7 @@ interface propsInterface { name: string, descripton: string, image: string, gith
 
 export default function ProjectCard({ name, descripton, image, github, screenshots, video, liveDemo, technologies, contributors }: propsInterface) {
     return (
-        <BackgroundGradient className="rounded-[22px] p-4 bg-zinc-900 min-w-[250px] lg:max-w-xl">
+        <BackgroundGradient className="rounded-[22px] p-4 bg-zinc-900 min-w-[250px] w-full lg:max-w-xl">
             <div className='flex justify-center items-center w-full bg-slate-100/[0.09] rounded-[22px] overflow-hidden'>
                 <Image
                     src={image}

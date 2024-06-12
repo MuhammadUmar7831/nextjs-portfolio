@@ -24,14 +24,18 @@ export const MenuItem = ({ text, i, menuRef, setOpen }: { text: string, i: numbe
 
     const handleClick = () => {
         if (menuRef.current) {
-            menuRef.current.scrollIntoView({ behavior: "smooth" });
+            const topPosition = menuRef.current.getBoundingClientRect().top + window.scrollY;
+            window.scrollTo({
+                top: topPosition,
+                behavior: "smooth",
+            });
             setOpen(false);
         }
     }
 
     return (
         <motion.li
-            className="w-fit mx-auto text-2xl lg:text-4xl text-black cursor-pointer"
+            className="w-fit mx-auto text-2xl md:text-3xl lg:text-4xl text-black cursor-pointer"
             variants={variants}
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.95 }}

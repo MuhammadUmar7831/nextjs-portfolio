@@ -24,7 +24,7 @@ export default function Home() {
       <Menu menuRefs={menuRefs}/>
       <div className="max-w-7xl w-full py-2">
         <TracingBeam className="px-6">
-          <Hero homeRef={menuRefs[0]}/>
+          <Hero homeRef={menuRefs[0]}  projectsRef={menuRefs[2]}/>
           <TechStack techStackRef={menuRefs[1]}/>
           <Projects projectsRef={menuRefs[2]}/>
           <Contact contactRef={menuRefs[3]}/>

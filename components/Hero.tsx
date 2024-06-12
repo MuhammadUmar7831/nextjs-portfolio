@@ -9,7 +9,17 @@ import { motion } from "framer-motion";
 import { Spotlight } from "./ui/Spotlight";
 import { RefObject } from "react";
 
-export function Hero({ homeRef }: { homeRef: RefObject<HTMLElement> }) {
+export function Hero({ homeRef, projectsRef }: { homeRef: RefObject<HTMLElement>, projectsRef: RefObject<HTMLElement> }) {
+
+    const handleClick = () => {
+        if (projectsRef.current) {
+            const topPosition = projectsRef.current.getBoundingClientRect().top + window.scrollY;
+            window.scrollTo({
+                top: topPosition,
+                behavior: "smooth",
+            });
+        }
+    }
 
     return (
         <section className="pb-20 pt-36 flex flex-col items-center" ref={homeRef}>
@@ -74,6 +84,7 @@ export function Hero({ homeRef }: { homeRef: RefObject<HTMLElement> }) {
                 </motion.div>
 
                 <MagicButton
+                    handleClick={handleClick}
                     icon={<FaLocationArrow />}
                     position="right"
                     title={"Show my work"}
