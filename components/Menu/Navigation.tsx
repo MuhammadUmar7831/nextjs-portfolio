@@ -31,19 +31,24 @@ const Navigation: React.FC<NavigationProps> = ({ isOpen, setOpen, menuRefs }: Na
     return (
         <>
             {isOpen && <div
-            onClick={()=>setOpen(false)}
+                onClick={() => setOpen(false)}
                 className={`fixed top-0 right-0 h-full w-screen bg-transparent`}
             />}
             <motion.ul
                 initial={false}
                 animate={isOpen ? "open" : "closed"}
                 variants={variants}
-                className="fixed  px-4 top-0 right-0 min-w-[300px] max-w-[600px] w-1/2 h-full bg-white flex flex-col justify-center gap-2 lg:gap-4 shadow-lg shadow-white"
+                className="fixed  px-4 top-0 right-0 min-w-[300px] max-w-[600px] w-1/2 h-full bg-white flex flex-col justify-between gap-2 lg:gap-4 shadow-lg shadow-white"
 
             >
-                {menu.map((item) => (
-                    <MenuItem key={item.id} text={item.text} i={item.id} menuRef={menuRefs[item.id]} setOpen={setOpen} />
-                ))}
+                <div />
+                <div className="flex flex-col justify-center gap-2 lg:gap-4">
+                    {menu.map((item) => (
+                        <MenuItem key={item.id} text={item.text} i={item.id} menuRef={menuRefs[item.id]} setOpen={setOpen} />
+                    ))}</div>
+                <h2 className="w-full font-semibold py-4 text-black text-center">
+                    &copy; {new Date().getFullYear()} Muhammd Umar . All rights reserved .
+                </h2>
             </motion.ul>
         </>
     );
