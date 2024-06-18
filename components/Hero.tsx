@@ -8,6 +8,7 @@ import styles from './ui/GridBg.module.css';
 import { motion } from "framer-motion";
 import { Spotlight } from "./ui/Spotlight";
 import { RefObject } from "react";
+import Link from "next/link";
 
 export function Hero({ homeRef, projectsRef }: { homeRef: RefObject<HTMLElement>, projectsRef: RefObject<HTMLElement> }) {
 
@@ -83,12 +84,14 @@ export function Hero({ homeRef, projectsRef }: { homeRef: RefObject<HTMLElement>
                     <ThreeDBubble otherClass={"absolute -top-80 w-5 h-5"} />
                 </motion.div>
 
-                <MagicButton
-                    handleClick={handleClick}
-                    icon={<FaLocationArrow />}
-                    position="right"
-                    title={"Show my work"}
-                />
+                <Link target="_blank" href={"https://drive.google.com/file/d/1OqRGxAnqyJroOhHuQbkNo1WCilskgUA5/view"}>
+                    <MagicButton
+                        // handleClick={handleClick}
+                        icon={<FaLocationArrow />}
+                        position="right"
+                        title={"Preview Resume"}
+                    />
+                </Link>
             </div>
 
         </section>
