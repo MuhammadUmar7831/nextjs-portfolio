@@ -37,4 +37,5 @@ export const programmingLanguages = [
     { id: 3, name: "C++", image: "/images/technologies/c++.png" },
     { id: 4, name: "C#", image: "/images/technologies/csharp.png" },
     { id: 5, name: "Javascript", image: "/images/technologies/javascript.png" },
+    { id: 6, name: "Typescript", image: "/images/technologies/typescript.png" },
 ];

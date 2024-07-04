@@ -1,6 +1,26 @@
 export const projects = [
     {
         id: 1,
+        imageSrc: "/images/projects/whisper-box.gif",
+        title: "Whisper Box",
+        description:
+            "Whisper Box is a web app enabling anonymous feedback with Google OAuth login, a user dashboard, unique feedback URLs, and AI suggestions using the MERN stack, Firebase, and Gemini AI Model 1.5 Flash.",
+        github: "https://github.com/MuhammadUmar7831/whisper-box",
+        liveDemo: "https://whisperbox.vercel.app/",
+        technologies: [
+            { id: 1, name: "Typescript", image: "/images/technologies/typescript.png" },
+            { id: 2, name: "MongoDB", image: "/images/technologies/mongodb.png" },
+            { id: 3, name: "Express Js", image: "/images/technologies/expressjs.png" },
+            { id: 4, name: "React", image: "/images/technologies/react.png" },
+            { id: 5, name: "Node js", image: "/images/technologies/nodejs.png" },
+            { id: 6, name: "Tailwindcss", image: "/images/technologies/tailwindcss.png" },
+            { id: 7, name: "Redux", image: "/images/technologies/redux.png" },
+            { id: 8, name: "firebase", image: "/images/technologies/firebase.png" },
+            { id: 9, name: "vercel", image: "/images/technologies/vercel.jpeg" },
+        ],
+    },
+    {
+        id: 2,
         imageSrc: "/images/projects/rehaish.png",
         title: "Rehasih",
         description:
@@ -19,7 +39,7 @@ export const projects = [
         ],
     },
     {
-        id: 2,
+        id: 3,
         imageSrc: "/images/projects/tournamentSchedulingSystem.gif",
         title: "کھیل",
         description:
@@ -37,7 +57,7 @@ export const projects = [
         ],
     },
     {
-        id: 3,
+        id: 4,
         imageSrc: "/images/projects/statistics.gif",
         title: "Statistics Application",
         description:
@@ -56,7 +76,7 @@ export const projects = [
         ],
     },
     {
-        id: 4,
+        id: 5,
         imageSrc: "/images/projects/cafe.gif",
         title: "eCafé",
         description: "Online store to order eatables for a local café. Inetgrated with admin panel. There are different roles in app like Customer, Admin, Manager and Clerk with different Powers.",
