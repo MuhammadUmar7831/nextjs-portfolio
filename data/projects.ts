@@ -6,6 +6,7 @@ export const projects = [
         description:
             "Whisper Box is a web app enabling anonymous feedback with Google OAuth login, a user dashboard, unique feedback URLs, and AI suggestions using the MERN stack, Firebase, and Gemini AI Model 1.5 Flash.",
         github: "https://github.com/MuhammadUmar7831/whisper-box",
+        video: "https://youtu.be/-KOquqEd7zo?si=JSizWsZSwYdie-JK",
         liveDemo: "https://whisperbox.vercel.app/",
         technologies: [
             { id: 1, name: "Typescript", image: "/images/technologies/typescript.png" },
