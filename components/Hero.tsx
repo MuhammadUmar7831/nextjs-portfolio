@@ -74,7 +74,7 @@ export function Hero({ homeRef, projectsRef }: { homeRef: RefObject<HTMLElement>
                     <ThreeDBubble otherClass={"absolute -top-80 w-5 h-5"} />
                 </motion.div>
 
-                <Link target="_blank" href={"https://drive.google.com/file/d/1OqRGxAnqyJroOhHuQbkNo1WCilskgUA5/view"}>
+                <Link target="_blank" href={"https://docs.google.com/document/d/1np68GyVGBQCNhbCk2FAmtseCqJDmIqIdL-bzLiYQX2Q/edit?usp=sharing"}>
                     <MagicButton
                         // handleClick={handleClick}
                         icon={<FaLocationArrow />}
