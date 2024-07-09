@@ -1,6 +1,52 @@
 export const projects = [
     {
         id: 1,
+        imageSrc: "/images/projects/expense-tracker.png",
+        title: "Expense Tracker",
+        description:
+            "Spend Smart is an expense tracker app developed by a team of 11 during my EntraCloud internship. I led the project, guiding team members unfamiliar with the technology, and gained skills in GitHub version control and team leadership.",
+        github: "https://github.com/MuhammadUmar7831/expense-tracker",
+        video: "https://www.youtube.com/watch?v=xubgkf-Q8_A",
+        liveDemo: "https://spend-smart-two.vercel.app/",
+        technologies: [
+            { id: 1, name: "MongoDB", image: "/images/technologies/mongodb.png" },
+            { id: 2, name: "Express Js", image: "/images/technologies/expressjs.png" },
+            { id: 3, name: "React", image: "/images/technologies/react.png" },
+            { id: 4, name: "Node js", image: "/images/technologies/nodejs.png" },
+            { id: 5, name: "Tailwindcss", image: "/images/technologies/tailwindcss.png" },
+            { id: 6, name: "Redux", image: "/images/technologies/redux.png" },
+            { id: 7, name: "firebase", image: "/images/technologies/firebase.png" },
+            { id: 8, name: "vercel", image: "/images/technologies/vercel.jpeg" },
+        ],
+        contributors: [
+            {
+                id: 1,
+                name: "Eisha Nadeem",
+                image: "https://avatars.githubusercontent.com/u/158443924?v=4",
+                link: "https://github.com/21F-9114",
+            },
+            {
+                id: 2,
+                name: "Muntaha Hamid",
+                image: "https://avatars.githubusercontent.com/u/167853775?v=4",
+                link: "https://github.com/muntaha-hamid",
+            },
+            {
+                id: 3,
+                name: "Sahil Kukreja",
+                image: "https://avatars.githubusercontent.com/u/134004313?v=4",
+                link: "https://github.com/skukreja123"
+            },
+            {
+                id: 4,
+                name: "Wajeeha Farhat",
+                image: "https://avatars.githubusercontent.com/u/158175157?v=4",
+                link: "https://github.com/wajeehafarhat37"
+            }
+        ],
+    },
+    {
+        id: 2,
         imageSrc: "/images/projects/whisper-box.gif",
         title: "Whisper Box",
         description:
@@ -20,25 +66,25 @@ export const projects = [
             { id: 9, name: "vercel", image: "/images/technologies/vercel.jpeg" },
         ],
     },
-    {
-        id: 2,
-        imageSrc: "/images/projects/rehaish.png",
-        title: "Rehasih",
-        description:
-            "Rehaish: Crafting a dynamic marketplace for property rentals and sales with MERN stack. Exciting features in progress!",
-        github: "https://github.com/MuhammadUmar7831/Rehaish",
-        liveDemo: "https://rehaish.vercel.app/",
-        technologies: [
-            { id: 1, name: "MongoDB", image: "/images/technologies/mongodb.png" },
-            { id: 2, name: "Express Js", image: "/images/technologies/expressjs.png" },
-            { id: 3, name: "React", image: "/images/technologies/react.png" },
-            { id: 4, name: "Node js", image: "/images/technologies/nodejs.png" },
-            { id: 5, name: "Tailwindcss", image: "/images/technologies/tailwindcss.png" },
-            { id: 6, name: "Redux", image: "/images/technologies/redux.png" },
-            { id: 7, name: "firebase", image: "/images/technologies/firebase.png" },
-            { id: 8, name: "vercel", image: "/images/technologies/vercel.jpeg" },
-        ],
-    },
+    // {
+    //     id: 2,
+    //     imageSrc: "/images/projects/rehaish.png",
+    //     title: "Rehasih",
+    //     description:
+    //         "Rehaish: Crafting a dynamic marketplace for property rentals and sales with MERN stack. Exciting features in progress!",
+    //     github: "https://github.com/MuhammadUmar7831/Rehaish",
+    //     liveDemo: "https://rehaish.vercel.app/",
+    //     technologies: [
+    //         { id: 1, name: "MongoDB", image: "/images/technologies/mongodb.png" },
+    //         { id: 2, name: "Express Js", image: "/images/technologies/expressjs.png" },
+    //         { id: 3, name: "React", image: "/images/technologies/react.png" },
+    //         { id: 4, name: "Node js", image: "/images/technologies/nodejs.png" },
+    //         { id: 5, name: "Tailwindcss", image: "/images/technologies/tailwindcss.png" },
+    //         { id: 6, name: "Redux", image: "/images/technologies/redux.png" },
+    //         { id: 7, name: "firebase", image: "/images/technologies/firebase.png" },
+    //         { id: 8, name: "vercel", image: "/images/technologies/vercel.jpeg" },
+    //     ],
+    // },
     {
         id: 3,
         imageSrc: "/images/projects/tournamentSchedulingSystem.gif",
