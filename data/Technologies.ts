@@ -13,7 +13,7 @@ export const frontendTechnologies = [
     { id: 6, name: "Thymeleaf", image: "/images/technologies/thymeleaf.png" },
     { id: 7, name: "Tailwindcss", image: "/images/technologies/tailwindcss.png" },
     { id: 8, name: "Bootstrap", image: "/images/technologies/bootstrap.png" },
-    { id: 9, name: "NextJs", image: "/images/technologies/nextjs.png" },
+    { id: 9, name: "NextJs", image: "/images/technologies/nextjs.jpg" },
 ];
 
 export const backendTechnologies = [
